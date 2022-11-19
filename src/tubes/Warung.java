@@ -535,159 +535,192 @@ public class Warung extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
         int tot = 0;
-        //Makanan-------------------------------------paket 1
-        int jmlhPkt1 = Integer.parseInt(txt_pkt1.getText());
-        if(jmlhPkt1 > 0){
-            int hargaPkt1 = jmlhPkt1 * 10000;
-            tot = tot + hargaPkt1;
-        }else{
-            tot = tot + 0;
+        // Makanan-------------------------------------paket 1
+        if (!txt_pkt1.getText().equals("")) {
+            int jmlhPkt1 = Integer.parseInt(txt_pkt1.getText());
+            if (jmlhPkt1 > 0) {
+                int hargaPkt1 = jmlhPkt1 * 10000;
+                tot = tot + hargaPkt1;
+            } else {
+                tot = tot + 0;
+            }
         }
 
-        //Makanan-------------------------------------paket 2
-        int jmlhPkt2 = Integer.parseInt(txt_pkt2.getText());
-        if(jmlhPkt2 > 0){
-            int hargaPkt2 = jmlhPkt2 * 13000;
-            tot = tot + hargaPkt2;
-        }else{
-            tot = tot + 0;
-        }
-        
-        //Makanan-------------------------------------paket 3
-        int jmlhPkt3 = Integer.parseInt(txt_pkt3.getText());
-        if(jmlhPkt3 > 0){
-            int hargaPkt3 = jmlhPkt3 * 10000;
-            tot = tot + hargaPkt3;
-        }else{
-            tot = tot + 0;
-        }
-        
-        //Makanan-------------------------------------tahu
-        int jmlhTahu = Integer.parseInt(txt_tahu.getText());
-        if(jmlhTahu > 0){
-            int hargaTahu = jmlhTahu * 1000;
-            tot = tot + hargaTahu;
-        }else{
-            tot = tot + 0;
-        }
-        
-        //Makanan-------------------------------------tempe
-        int jmlhTempe = Integer.parseInt(txt_tempe.getText());
-        if(jmlhTempe > 0){
-            int hargaTempe = jmlhTempe * 1000;
-            tot = tot + hargaTempe;
-        }else{
-            tot = tot + 0;
-        }
-        
-        //Makanan-------------------------------------nasi
-        int jmlhNasi = Integer.parseInt(txt_nasi.getText());
-        if(jmlhNasi > 0){
-            int hargaNasi = jmlhNasi * 3000;
-            tot = tot + hargaNasi;
-        }else{
-            tot = tot + 0;
-        }
-        
-        //Makanan-------------------------------------ayam goreng
-        int jmlhAyamGoreng = Integer.parseInt(txt_ayamGoreng.getText());
-        if(jmlhAyamGoreng > 0){
-            int hargaAyamGoreng = jmlhAyamGoreng * 6000;
-            tot = tot + hargaAyamGoreng;
-        }else{
-            tot = tot + 0;
-        }
-        
-        //Makanan-------------------------------------ayam geprek
-        int jmlhAyamGeprek = Integer.parseInt(txt_ayamGeprek.getText());
-        if(jmlhAyamGeprek > 0){
-            int hargaAyamGeprek = jmlhAyamGeprek * 6500;
-            tot = tot + hargaAyamGeprek;
-        }else{
-            tot = tot + 0;
-        }
-        
-        //Makanan-------------------------------------ayam bakar
-        int jmlhAyamBakar = Integer.parseInt(txt_ayamBakar.getText());
-        if(jmlhAyamBakar > 0){
-            int hargaAyamBakar = jmlhAyamBakar * 7000;
-            tot = tot + hargaAyamBakar;
-        }else{
-            tot = tot + 0;
+        // Makanan-------------------------------------paket 2
+        if (!txt_pkt2.getText().equals("")) {
+            int jmlhPkt2 = Integer.parseInt(txt_pkt2.getText());
+            if (jmlhPkt2 > 0) {
+                int hargaPkt2 = jmlhPkt2 * 13000;
+                tot = tot + hargaPkt2;
+            } else {
+                tot = tot + 0;
+            }
         }
 
-        //Minuman------------------------------------- Teh Manis
-        int jmlhTehManis = Integer.parseInt(txt_tehManis.getText());
-        if(jmlhTehManis > 0){
-            int hargaTehManis = jmlhTehManis * 3000;
-            tot = tot + hargaTehManis;
-        }else{
-            tot = tot + 0;
+        // Makanan-------------------------------------paket 3
+        if (!txt_pkt3.getText().equals("")) {
+            int jmlhPkt3 = Integer.parseInt(txt_pkt3.getText());
+            if (jmlhPkt3 > 0) {
+                int hargaPkt3 = jmlhPkt3 * 10000;
+                tot = tot + hargaPkt3;
+            } else {
+                tot = tot + 0;
+            }
         }
 
-        //Minuman------------------------------------- Jeruk
-        int jmlhJeruk = Integer.parseInt(txt_jeruk.getText());
-        if(jmlhJeruk > 0){
-            int hargaJeruk = jmlhJeruk * 4000;
-            tot = tot + hargaJeruk;
-        }else{
-            tot = tot + 0;
+        // Makanan-------------------------------------tahu
+        if (!txt_tahu.getText().equals("")) {
+            int jmlhTahu = Integer.parseInt(txt_tahu.getText());
+            if (jmlhTahu > 0) {
+                int hargaTahu = jmlhTahu * 1000;
+                tot = tot + hargaTahu;
+            } else {
+                tot = tot + 0;
+            }
         }
 
-        //Minuman------------------------------------- Nutrisari
-        int jmlhNutrisari = Integer.parseInt(txt_nutrisari.getText());
-        if(jmlhNutrisari > 0){
-            int hargaNutrisari = jmlhNutrisari * 3000;
-            tot = tot + hargaNutrisari;
-        }else{
-            tot = tot + 0;
+        // Makanan-------------------------------------tempe
+        if (!txt_tempe.getText().equals("")) {
+            int jmlhTempe = Integer.parseInt(txt_tempe.getText());
+            if (jmlhTempe > 0) {
+                int hargaTempe = jmlhTempe * 1000;
+                tot = tot + hargaTempe;
+            } else {
+                tot = tot + 0;
+            }
         }
 
-        //Minuman------------------------------------- Milo
-        int jmlhMilo = Integer.parseInt(txt_milo.getText());
-        if(jmlhMilo > 0){
-            int hargaMilo = jmlhMilo * 3500;
-            tot = tot + hargaMilo;
-        }else{
-            tot = tot + 0;
+        // Makanan-------------------------------------nasi
+        if (!txt_nasi.getText().equals("")) {
+            int jmlhNasi = Integer.parseInt(txt_nasi.getText());
+            if (jmlhNasi > 0) {
+                int hargaNasi = jmlhNasi * 3000;
+                tot = tot + hargaNasi;
+            } else {
+                tot = tot + 0;
+            }
         }
 
-        //Minuman------------------------------------- Hilo
-        int jmlhHilo = Integer.parseInt(txt_hilo.getText());
-        if(jmlhHilo > 0){
-            int hargaHilo = jmlhHilo * 4000;
-            tot = tot + hargaHilo;
-        }else{
-            tot = tot + 0;
+        // Makanan-------------------------------------ayam goreng
+        if (!txt_ayamGoreng.getText().equals("")) {
+            int jmlhAyamGoreng = Integer.parseInt(txt_ayamGoreng.getText());
+            if (jmlhAyamGoreng > 0) {
+                int hargaAyamGoreng = jmlhAyamGoreng * 6000;
+                tot = tot + hargaAyamGoreng;
+            } else {
+                tot = tot + 0;
+            }
         }
 
-        //Minuman------------------------------------- GoodDay
-        int jmlhGoodDay = Integer.parseInt(txt_goodday.getText());
-        if(jmlhGoodDay > 0){
-            int hargaGoodDay = jmlhGoodDay * 5000;
-            tot = tot + hargaGoodDay;
-        }else{
-            tot = tot + 0;
+        // Makanan-------------------------------------ayam geprek
+        if (!txt_ayamGeprek.getText().equals("")) {
+            int jmlhAyamGeprek = Integer.parseInt(txt_ayamGeprek.getText());
+            if (jmlhAyamGeprek > 0) {
+                int hargaAyamGeprek = jmlhAyamGeprek * 6500;
+                tot = tot + hargaAyamGeprek;
+            } else {
+                tot = tot + 0;
+            }
         }
 
-        //Minuman------------------------------------- Air Es
-        int jmlhAirEs = Integer.parseInt(txt_airEs.getText());
-        if(jmlhAirEs > 0){
-            int hargaAirEs = jmlhAirEs * 1000;
-            tot = tot + hargaAirEs;
-        }else{
-            tot = tot + 0;
+        // Makanan-------------------------------------ayam bakar
+        if (!txt_ayamBakar.getText().equals("")) {
+            int jmlhAyamBakar = Integer.parseInt(txt_ayamBakar.getText());
+            if (jmlhAyamBakar > 0) {
+                int hargaAyamBakar = jmlhAyamBakar * 7000;
+                tot = tot + hargaAyamBakar;
+            } else {
+                tot = tot + 0;
+            }
         }
 
-        //Minuman------------------------------------- Teh Tawar
-        int jmlhTehTawar = Integer.parseInt(txt_tehTawar.getText());
-        if(jmlhTehTawar > 0){
-            int hargaTehTawar = jmlhTehTawar * 1000;
-            tot = tot + hargaTehTawar;
-        }else{
-            tot = tot + 0;
+        // Minuman------------------------------------- Teh Manis
+        if (!txt_tehManis.getText().equals("")) {
+            int jmlhTehManis = Integer.parseInt(txt_tehManis.getText());
+            if (jmlhTehManis > 0) {
+                int hargaTehManis = jmlhTehManis * 3000;
+                tot = tot + hargaTehManis;
+            } else {
+                tot = tot + 0;
+            }
+        }
+
+        // Minuman------------------------------------- Jeruk
+        if (!txt_jeruk.getText().equals("")) {
+            int jmlhJeruk = Integer.parseInt(txt_jeruk.getText());
+            if (jmlhJeruk > 0) {
+                int hargaJeruk = jmlhJeruk * 4000;
+                tot = tot + hargaJeruk;
+            } else {
+                tot = tot + 0;
+            }
+        }
+
+        // Minuman------------------------------------- Nutrisari
+        if (!txt_nutrisari.getText().equals("")) {
+            int jmlhNutrisari = Integer.parseInt(txt_nutrisari.getText());
+            if (jmlhNutrisari > 0) {
+                int hargaNutrisari = jmlhNutrisari * 3000;
+                tot = tot + hargaNutrisari;
+            } else {
+                tot = tot + 0;
+            }
+        }
+
+        // Minuman------------------------------------- Milo
+        if (!txt_milo.getText().equals("")) {
+            int jmlhMilo = Integer.parseInt(txt_milo.getText());
+            if (jmlhMilo > 0) {
+                int hargaMilo = jmlhMilo * 3500;
+                tot = tot + hargaMilo;
+            } else {
+                tot = tot + 0;
+            }
+        }
+
+        // Minuman------------------------------------- Hilo
+        if (!txt_hilo.getText().equals("")) {
+            int jmlhHilo = Integer.parseInt(txt_hilo.getText());
+            if (jmlhHilo > 0) {
+                int hargaHilo = jmlhHilo * 4000;
+                tot = tot + hargaHilo;
+            } else {
+                tot = tot + 0;
+            }
+        }
+
+        // Minuman------------------------------------- GoodDay
+        if (!txt_goodday.getText().equals("")) {
+            int jmlhGoodDay = Integer.parseInt(txt_goodday.getText());
+            if (jmlhGoodDay > 0) {
+                int hargaGoodDay = jmlhGoodDay * 5000;
+                tot = tot + hargaGoodDay;
+            } else {
+                tot = tot + 0;
+            }
+        }
+
+        // Minuman------------------------------------- Air Es
+        if (!txt_airEs.getText().equals("")) {
+            int jmlhAirEs = Integer.parseInt(txt_airEs.getText());
+            if (jmlhAirEs > 0) {
+                int hargaAirEs = jmlhAirEs * 1000;
+                tot = tot + hargaAirEs;
+            } else {
+                tot = tot + 0;
+            }
+        }
+
+        // Minuman------------------------------------- Teh Tawar
+        if (!txt_tehTawar.getText().equals("")) {
+            int jmlhTehTawar = Integer.parseInt(txt_tehTawar.getText());
+            if (jmlhTehTawar > 0) {
+                int hargaTehTawar = jmlhTehTawar * 1000;
+                tot = tot + hargaTehTawar;
+            } else {
+                tot = tot + 0;
+            }
         }
         // set total pembayaran
         lb_total.setText(String.valueOf(tot));    
